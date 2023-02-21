@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="../tech_shope/css/style.css">
+
+    <title>AMR_TECH</title>
+</head>
+<body>
+        <div class="container">
+            <div class="head">
+
+                <h2>Welcom To Amr Tech Shop</h2>
+                <p>product mangment system</p>
+            </div>
+            <div class="input">
+
+                <input placeholder="title" type="text" id="title">
+                <div class="price">
+                    <input onkeyup="get_total()" type="number" id="price" placeholder="price">
+                    <input onkeyup="get_total()" type="number" id="taxes" placeholder="taxes">
+                    <input onkeyup="get_total()" type="number" id="ads" placeholder="ads">
+                    <input onkeyup="get_total()" type="number" id="discount" placeholder="discount">
+                    <small id="total"></small>
+                </div>
+                <input placeholder="count" type="number" id="count" >
+                <input placeholder="category" type="text" id="category">
+                <button id="submit">Create </button>
+
+
+            </div>
+            <div class="output">
+                <div    class="searchblock">
+                    <input onkeyup = "searchdata(this.value)" type= "text" id="search" placeholder="search">
+                    <div class="btnsearch">
+                        <button  onclick = "search_mood(this.id)"id="searchtitle"> Search By Title</button>
+                        <button  onclick = "search_mood(this.id)"id="searccategory">Search By Category</button>
+                    </div>
+
+                </div>
+                <div id="Delete_All"></div>
+
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                    <tbody id="tbody">
+
+                    </tbody >
+                </table>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    <script src="../tech_shope/main.js"></script>
+</body>
+</html>
